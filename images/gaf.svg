@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="gaf.svg"
+   inkscape:version="0.91 r13725"
+   sodipodi:version="0.32"
+   id="svg2"
+   height="136.03125"
+   width="305.75"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.1"
+   inkscape:export-filename="/tmp/logo.png"
+   inkscape:export-xdpi="74.310043"
+   inkscape:export-ydpi="74.310043">
+  <defs
+     id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 108.07087 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="322.44095 : 108.07087 : 1"
+       inkscape:persp3d-origin="161.22047 : 72.047246 : 1"
+       id="perspective9719" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter4148">
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood4150" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite4152" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0"
+         result="blur"
+         id="feGaussianBlur4154" />
+      <feOffset
+         dx="0"
+         dy="-1"
+         result="offset"
+         id="feOffset4156" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite4158" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-y="-8"
+     inkscape:window-x="1912"
+     inkscape:window-height="1018"
+     inkscape:window-width="1920"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="0.20171108"
+     inkscape:cx="-81.086568"
+     inkscape:zoom="1.4"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     gridtolerance="0.11288889mm"
+     showgrid="false"
+     inkscape:window-maximized="1"
+     units="mm"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       id="GridFromPre046Settings"
+       type="xygrid"
+       originx="-3.1926389mm"
+       originy="-18.913613mm"
+       spacingx="0.28222222mm"
+       spacingy="0.28222222mm"
+       color="#0000ff"
+       empcolor="#0000ff"
+       opacity="0.2"
+       empopacity="0.4"
+       empspacing="5"
+       units="mm"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1"
+     transform="translate(-11.3125,-13.09375)">
+    <path
+       style="font-size:159.83251953px;font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;writing-mode:lr-tb;text-anchor:start;fill:#7d7d7d;fill-opacity:1;stroke:none;font-family:URW Gothic L;filter:url(#filter4148)"
+       d="m 190.125,13.09375 -40.03125,66.5 -88.4375,0 -3.84375,20.46875 48.90625,0 c -8.630947,12.94642 -22.999843,20.78125 -38.34375,20.78125 -10.548936,0 -19.33262,-3.20762 -25.40625,-9.28125 -5.594132,-5.75396 -9.28125,-14.869052 -9.28125,-23.5 0,-8.950612 3.672787,-19.497634 9.90625,-27.96875 9.110444,-12.466924 23.016764,-19.34375 39,-19.34375 7.192456,0 12.773698,1.608688 18.6875,5.125 4.31547,2.557318 6.57744,4.808536 10.09375,10.5625 l 25.71875,0 c -1.27866,-7.51212 -4.7942,-14.22454 -11.1875,-20.9375 -9.58994,-10.069438 -23.9891,-15.84375 -39.8125,-15.84375 -39.158928,0 -74.78125,34.369731 -74.78125,72.25 0,29.24932 22.38086,50.03125 54.1875,50.03125 21.417536,0 41.08025,-9.09977 55.625,-25.5625 4.63773,-5.21745 8.38025,-10.71829 11.25,-16.3125 l 5.375,0 -18.75,31.15625 24.125,0 18.71875,-30.53125 42.03125,0 7.03125,30.53125 24.125,0 -7.21875,-30.875 16.28125,0 -9.03125,48.78125 21.90625,0 8.9375,-48.4375 36.4375,0 3.84375,-21.09375 -36.4375,0 5.28125,-27.5 38.1875,0 L 317.0625,31 l -60.09375,0 -9.0625,48.9375 -24.875,0 -15.625,-66.84375 -17.28125,0 z M 193,43.9375 l 6.09375,35.65625 -25.28125,0 L 193,43.9375 z"
+       id="path3011"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="49.059685"
+       inkscape:export-ydpi="49.059685" />
+  </g>
+</svg>
