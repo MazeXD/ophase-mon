@@ -10,6 +10,8 @@ ExecStart=-/usr/bin/agetty --autologin picast --noclear %I 38400 linux
 Type=simple
 RestartSec=120s
 EOF
+systemctl enable getty@tty7
+systemctl start getty@tty7
 ```
 
 Bash then starts an X session:
