@@ -23,6 +23,13 @@
 		slides.push(slide);
 		slide.appendTo(slider_element);
 
+		if (id) {
+			var func = window[id + '_load'];
+			if (typeof func === 'function') {
+				func(slide);
+			}
+		}
+
 		if (active_slide === -1) {
 			changeToSlide(0);
 		}
