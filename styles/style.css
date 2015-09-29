@@ -38,8 +38,8 @@ body, html {
 
 	height: 68px;
 	max-height: 68px;
-	width: 250px;
-	max-width: 250px;
+	width: 220px;
+	max-width: 220px;
 }
 
 #header-title {
@@ -48,8 +48,8 @@ body, html {
 
 	height: 68px;
 	max-height: 68px;
-	width: 866px;
-	max-width: 866px;
+	width: 926px;
+	max-width: 926px;
 }
 
 #header-etc {
@@ -58,8 +58,8 @@ body, html {
 
 	height: 68px;
 	max-height: 68px;
-	width: 250px;
-	max-width: 250px;
+	width: 220px;
+	max-width: 220px;
 }
 
 #slider {
@@ -67,14 +67,14 @@ body, html {
 	color: #ffffff;
 	
 	float: left;
-	width: 1115px;
+	width: 1145px;
 	height: 699px;
 	overflow: hidden;
 }
 
 .slide {
 	position: absolute;
-	width: 1115px;
+	width: 1145px;
 	height: 699px;
 }
 
@@ -93,8 +93,8 @@ body, html {
 	float: right;
 	height: 700px;
 	max-height: 700px;
-	width: 250px;
-	max-width: 250px;
+	width: 220px;
+	max-width: 220px;
 }
 
 #sidebar .element {
@@ -102,7 +102,7 @@ body, html {
 }
 
 #sidebar .element.social {
-	margin: 0 0 0px 20px;
+	margin: 0 0 0px 5px;
 }
 
 #sidebar .element.social img {
@@ -110,18 +110,17 @@ body, html {
 }
 
 #sidebar .element.centered {
-    display: inline-block;
-    text-align: center;
+	display: inline-block;
+	text-align: center;
 }
 
 #sidebar .element.centered img{
 	width: 50%;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 #sidebar #logo.element {
 	margin: 20px auto;
-
 	width: 220px;
 }
 
@@ -129,6 +128,6 @@ body, html {
 	margin: 0;
 	position: absolute;
 	bottom: 20px;
-	left: 25;
+	left: 10;
 	width: 200px;
 }
