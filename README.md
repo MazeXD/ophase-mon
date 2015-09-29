@@ -1,5 +1,7 @@
 # O-Phase Monitor
 ## Install
+Run `pip3 install -r requirements.txt` to install requirements for backend.py
+
 Create the file `/etc/systemd/system/getty@tty7.service.d/autologin.conf` to automatically switch to `tty7` and start a shell (bash) as user `picast`.
 ```sh
 mkdir /etc/systemd/system/getty@tty7.service.d
