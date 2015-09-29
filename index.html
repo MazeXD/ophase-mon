@@ -39,7 +39,25 @@
 			etc: 'Tag 1',
 			slides: [
 				//{ type: 'image', data: 'images/default-slide.png' },
-				//{ type: 'html', data: '<h1>Some test header<\/h1>' }
+				//{ type: 'html', data: '<h1>Some test header<\/h1>' },
+				/*{ id: 'test', type: 'html', data: ' \
+					<script> \
+					var test_title_element; \
+					var test_old_title; \
+					function test_enter(slide) { \
+						test_title_element = $(\'#header-title\'); \
+						if (test_title_element) { \
+							test_old_title = test_title_element.text(); \
+							test_title_element.text(\'Test\'); \
+						} \
+					} \
+					function test_leave() { \
+						if (test_title_element) { \
+							test_title_element.text(test_old_title); \
+						} \
+					} \
+					<\/script>'
+				}*/
 			]
 		};
 	</script>
