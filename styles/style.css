@@ -64,10 +64,11 @@ body, html {
 
 #slider {
 	background-color: #090909;
-
-    float: left;
-    width: 1115px;
-    height: 699px;
+	color: #ffffff;
+	
+	float: left;
+	width: 1115px;
+	height: 699px;
 	overflow: hidden;
 }
 
