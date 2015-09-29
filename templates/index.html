@@ -33,14 +33,19 @@
 			</div>
 		</div>
 	</div>
+	<script src="scripts/zepto.min.js"></script>
+	<script src="scripts/moment-with-locales.min.js"></script>
+	<script src="scripts/lodash.min.js"></script>
 	<script>
+		var CONFIG = $.parseJSON('{{ configuration|safe }}');
+		/*
 		var CONFIG = {
 			title: 'O-Phase 2015',
-			etc: 'Tag 1',
+			etc: 'Day 1',
 			slides: [
 				//{ type: 'image', data: 'images/default-slide.png' },
 				//{ type: 'html', data: '<h1>Some test header<\/h1>' },
-				/*{ id: 'test', type: 'html', data: ' \
+				{ id: 'test', type: 'html', data: ' \
 					<script> \
 					var test_title_element; \
 					var test_old_title; \
@@ -57,13 +62,11 @@
 						} \
 					} \
 					<\/script>'
-				}*/
+				}
 			]
 		};
+		*/
 	</script>
-	<script src="scripts/zepto.min.js"></script>
-	<script src="scripts/moment-with-locales.min.js"></script>
-	<script src="scripts/lodash.min.js"></script>
 	<script src="scripts/header.js"></script>
 	<script src="scripts/slider.js"></script>
 </body>

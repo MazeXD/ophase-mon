@@ -17,9 +17,12 @@ x0vncserver -display :0 -passwordfile ~/.vnc/passwd &
 xset -dpms
 xset s off
 
+## Start backend server
+./backend.py &
+
 ## Start the browser (surf). You can restart it by "killall surf"
 while true ; do
-	surf -np "file://$BASE/index.html" &
+	surf -np "http://127.0.0.1:8000/" &
 	echo $! >/tmp/browser.pid
 	
 	## Put surf into full screen (and hope that 5 seconds where enough)
