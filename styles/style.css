@@ -14,9 +14,9 @@ body, html {
 }
 
 #header {
-	background-image: -webkit-linear-gradient(left top, #383838 0%, #212121 100%); 
-	background-image: -moz-linear-gradient(right bottom, #383838 0%, #212121 100%); 
-	background-image: -o-linear-gradient(#383838 0%, #212121 100%); 
+	background-image: -webkit-linear-gradient(left top, #383838 0%, #212121 100%);
+	background-image: -moz-linear-gradient(right bottom, #383838 0%, #212121 100%);
+	background-image: -o-linear-gradient(#383838 0%, #212121 100%);
 	background-image: linear-gradient(#383838 0%, #212121 100%);
 
 	border-bottom: 1px solid #373838;
@@ -68,6 +68,13 @@ body, html {
     float: left;
     width: 1115px;
     height: 699px;
+	overflow: hidden;
+}
+
+.slide {
+	position: absolute;
+	width: 1115px;
+	height: 699px;
 }
 
 #sidebar {
@@ -113,7 +120,7 @@ body, html {
 
 #sidebar #logo.element {
 	margin: 20px auto;
-	
+
 	width: 220px;
 }
 

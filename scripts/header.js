@@ -18,7 +18,6 @@
 
 		var now = moment();
 		clock_element.text(now.format(CLOCK_FORMAT));
-
 	}
 
 
