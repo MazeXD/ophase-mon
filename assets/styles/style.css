@@ -169,6 +169,16 @@ body, html {
 	font-size: 20pt;
 }
 
+.slide hr {
+	background-color: #ffffff;
+	border: 0;
+
+	width: 1000px;
+	height: 5px;
+	margin: 20px auto;
+}
+
+
 /* Utility classes */
 .text-left {
 	text-align: left;
@@ -180,4 +190,12 @@ body, html {
 
 .text-right {
 	text-align: right;
+}
+
+.active {
+	color: #ffffff;
+}
+
+.disabled {
+	color: #ababab;
 }

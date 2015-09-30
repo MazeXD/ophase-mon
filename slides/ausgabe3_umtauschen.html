@@ -1,0 +1,34 @@
+<style>
+
+</style>
+
+<h1 class="ausgabe-header text-center">T-Shirt Ausgabe</h1>
+
+<h4 class="ausgabe-title disabled">1. Rechtzeitig angemeldet</h4>
+<h4 class="ausgabe-title disabled">2. Andere</h4>
+<h4 class="ausgabe-title">3. Umtauschen</h4>
+
+<hr />
+
+<div id="ausgabe-umtauschen" class="text-center"></div>
+
+<hr />
+
+<script>
+(function(exports) {
+    function on_load(slide) {
+	$.getJSON('/ausgabe-andere.json', function(boxes) {
+            var container = $('#ausgabe-umtauschen');
+            for (var i = 0; i < boxes.length; ++i) {
+                var box = $('<div/>', {
+                    class: 'ausgabe-box text-left'
+                });
+                box.text(boxes[i]);
+                box.appendTo(container);
+            }
+        });
+    }
+
+    exports.ausgabe3_umtauschen_load = on_load;
+})(window);
+</script>

@@ -1,0 +1,56 @@
+<style>
+.ausgabe-header {
+    margin-bottom: 60px;
+}
+
+.ausgabe-title {
+    margin: 20px auto;
+    width: 600px;
+}
+
+.ausgabe-title:last-of-type {
+    margin-bottom: 60px;
+}
+
+.ausgabe-box {
+    display: inline-block;
+    border: 2px solid #ffffff;
+    
+    font-size: 20pt;
+    
+    padding: 20px 30px;
+    margin: 0 46px;
+}
+</style>
+
+<h1 class="ausgabe-header text-center">T-Shirt Ausgabe</h1>
+
+<h4 class="ausgabe-title">1. Rechtzeitig angemeldet</h4>
+<h4 class="ausgabe-title disabled">2. Andere</h4>
+<h4 class="ausgabe-title disabled">3. Umtauschen</h4>
+
+<hr />
+
+<div id="ausgabe-rechtzeitig" class="text-center"></div>
+
+<hr />
+
+<script>
+(function(exports) {
+    function on_load(slide) {
+	$.getJSON('/ausgabe-rechtzeitig.json', function(boxes) {
+            var container = $('#ausgabe-rechtzeitig');
+            for (var i = 0; i < boxes.length; ++i) {
+                //var box = boxes[i];
+                var box = $('<div/>', {
+                    class: 'ausgabe-box text-left'
+                });
+                box.text(boxes[i]);
+                box.appendTo(container);
+            }
+        });
+    }
+
+    exports.ausgabe1_rechtzeitig_load = on_load;
+})(window);
+</script>
