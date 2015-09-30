@@ -29,10 +29,6 @@
 				func(slide);
 			}
 		}
-
-		if (active_slide === -1) {
-			changeToSlide(0);
-		}
 	}
 
 	function buildSlide(data, type) {
@@ -112,6 +108,9 @@
 				if (typeof func === 'function') {
 					func(new_active);
 				}
+				window.location.hash = id;
+			} else {
+				window.location.hash = '';
 			}
 		});
 
@@ -131,12 +130,30 @@
 
 		if (slides.length < 1) {
 			addSlide(DEFAULT_IMAGE, 'image');
+			changeToSlide(0);
 			return;
 		}
 
 		for (var i = 0; i < slides.length; ++i) {
 			var slide = slides[i];
 			addSlide(slide.data, slide.type, slide.id);
+		}
+
+		var id = window.location.hash;
+		if (id !== '') {
+			id = id.substring(1);
+			for (var i = 0; i < slides.length; ++i) {
+				var slide = slides[i];
+				var slide_id = slide.id || '';
+				if (slide.id === id) {
+					changeToSlide(i);
+					break;
+				}
+			}
+		}
+
+		if (active_slide === -1) {
+			changeToSlide(0);
 		}
 
 		// KeyHandler - Start
