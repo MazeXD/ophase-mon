@@ -17,7 +17,7 @@ SLIDE_FOLDER = 'slides/'
 def collect_slides():
 	slides = []
 	# TODO: Implement some filtering to exclude slides (extension?)
-	for filename in os.listdir(SLIDE_FOLDER):
+	for filename in sorted(os.listdir(SLIDE_FOLDER)):
 		slide = {
 			'id': os.path.splitext(filename)[0]
 		}
