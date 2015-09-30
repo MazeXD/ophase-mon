@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="default-slide.svg"
-   inkscape:export-filename="/home/mazexd/Desktop/ophase-mon/images/default-slide.png"
+   inkscape:export-filename="/home/mazexd/Desktop/ophase-mon/assets/images/default-slide.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -62,7 +62,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="-372.15004"
+     inkscape:cx="214.70698"
      inkscape:cy="182.4949"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -81,7 +81,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -102,7 +102,7 @@
          id="tspan4686"
          x="559.94501"
          y="567.71143"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:154.07133484px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#a6a6a6;fill-opacity:1">Wilkommen</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:154.07133484px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#a6a6a6;fill-opacity:1">Willkommen</tspan><tspan
          sodipodi:role="line"
          x="559.94501"
          y="760.3006"
