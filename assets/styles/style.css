@@ -1,3 +1,4 @@
+/* Container */
 body, html {
 	margin: 0;
 	padding: 0;
@@ -13,6 +14,8 @@ body, html {
 	max-height: 768px;
 }
 
+
+/* Header */
 #header {
 	background-image: -webkit-linear-gradient(left top, #383838 0%, #212121 100%);
 	background-image: -moz-linear-gradient(right bottom, #383838 0%, #212121 100%);
@@ -62,22 +65,8 @@ body, html {
 	max-width: 220px;
 }
 
-#slider {
-	background-color: #090909;
-	color: #ffffff;
-	
-	float: left;
-	width: 1145px;
-	height: 699px;
-	overflow: hidden;
-}
 
-.slide {
-	position: absolute;
-	width: 1145px;
-	height: 699px;
-}
-
+/* Sidebar */
 #sidebar {
 	position: relative;
 	top: -1px;
@@ -130,4 +119,65 @@ body, html {
 	bottom: 20px;
 	left: 10;
 	width: 200px;
+}
+
+
+/* Slide styling */
+#slider {
+	background-color: #090909;
+
+	color: #ffffff;
+
+	float: left;
+	width: 1145px;
+	height: 699px;
+	overflow: hidden;
+}
+
+.slide {
+	position: absolute;
+
+	width: 1145px;
+	height: 699px;
+}
+
+.slide h1, .slide h2, .slide h3,
+.slide h4, .slide h5, .slide h6 {
+}
+
+.slide h1 {
+	font-size: 40pt;
+}
+
+.slide h2 {
+	font-size: 36pt;
+}
+
+.slide h3 {
+	font-size: 32pt;
+}
+
+.slide h4 {
+	font-size: 28pt;
+}
+
+.slide h5 {
+	font-size: 24pt;
+}
+
+.slide h6 {
+	font-size: 20pt;
+}
+
+/* Utility classes */
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
 }
