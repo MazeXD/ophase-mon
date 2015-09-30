@@ -10,7 +10,8 @@ import os
 app = Flask(__name__, static_url_path='', static_folder='assets')
 
 TITLE = 'O-Phase 2015'
-ETC = 'Day 1'
+ETC = 'Tag 1'
+TWITTER_HASHTAG = '#ophase2015'
 SLIDE_FOLDER = 'slides/'
 
 
@@ -51,6 +52,7 @@ def index():
 	config = {
 		'title': TITLE,
 		'etc': ETC,
+		'twitter_hashtag': TWITTER_HASHTAG,
 		'slides': collect_slides()
 	}
 	return render_template('index.html', configuration=escape_json(json.dumps(config)))

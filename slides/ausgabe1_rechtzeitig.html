@@ -41,7 +41,6 @@
 	$.getJSON('/ausgabe-rechtzeitig.json', function(boxes) {
             var container = $('#ausgabe-rechtzeitig');
             for (var i = 0; i < boxes.length; ++i) {
-                //var box = boxes[i];
                 var box = $('<div/>', {
                     class: 'ausgabe-box text-left'
                 });
