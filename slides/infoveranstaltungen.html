@@ -40,7 +40,7 @@ h5.infoveranstaltung-title {
 (function(exports) {
 	function on_load(slide) {
 		// TODO: Change url to external and configure CORS correctly
-		$.getJSON('/ophase.json', function(data){
+		$.getJSON('/jsonconfig.json', function(data){
 			var today = moment().format('YYYY-MM-DD');
 			var kvts = data.kvts;
 
