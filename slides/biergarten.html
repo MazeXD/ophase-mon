@@ -1,0 +1,149 @@
+<style>
+.biergarten-container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.biergarten-container hr {
+	width: 450px;
+	height: 3px;
+	margin-left: -25px;
+}
+
+#biergarten-essen {
+	float: left;
+	width: 400px;
+	padding: 0 25px;
+	margin-left: 50px;
+}
+
+#biergarten-trinken {
+	float: left;
+	width: 400px;
+	padding: 0 25px;
+	margin-right: 50px;
+}
+
+.biergarten-item {
+	margin: 10px 0;
+	font-size: 28pt;
+}
+
+.biergarten-item sub {
+	font-size: 20pt;
+}
+
+.biergarten-price {
+	float: right;
+display: inline-block;
+}
+
+.biergarten-subitem {
+	font-size: 16pt;
+}
+
+.biergarten-subitem sub{
+	font-size: 10pt;
+}
+
+#biergarten-footer {
+	font-size: 16pt;
+
+	position: absolute;
+	bottom: 20px;
+}
+</style>
+
+<h1 class="text-center">Biergarten</h1>
+
+<div class="biergarten-container">
+    <div id="biergarten-trinken"></div>
+    <div id="biergarten-essen"></div>
+
+	<div id="biergarten-footer">
+		<sup>1</sup> Club Mate/Spezi: <span class="disabled">Farbstoff, Koffein</span>; Limo; Apfelschorle; Wasser <br />
+		<sup>2</sup> Gluten
+	</div>
+</div>
+
+<script>
+(function(exports) {
+	const PFAND = 1.0;
+
+	function on_load(slide) {
+		// TODO: Change url to external and configure CORS correctly
+		$.getJSON('/jsonconfig.json', function(data){
+			var food = data.grillfest.essen;
+			var drinks = data.grillfest.trinken;
+
+			var food_container = $('#biergarten-essen');
+			for (var i = 0; i < food.length; ++i) {
+				var item = $('<div/>', {
+					class: 'biergarten-item'
+				});
+				item.text(food[i].name);
+
+				var price = $('<div/>', {
+					class: 'biergarten-price'
+				});
+				price.text(food[i].price.toFixed(2) + '€');
+				price.appendTo(item);
+
+				if (food[i].bread) {
+					var subitem = $('<div/>', {
+						class: 'biergarten-subitem'
+					});
+					subitem.html('( mit Semmel<sub>2</sub>)');
+					subitem.appendTo(item);
+				}
+
+				item.appendTo(food_container);
+			}
+
+			var drinks_container = $('#biergarten-trinken');
+			for (var i = 0; i < drinks.length; ++i) {
+				var item = $('<div/>', {
+					class: 'biergarten-item'
+				});
+				item.text(drinks[i].name);
+
+				if (drinks[i].allergens !== "") {
+					var allerg = $('<sub/>');
+					allerg.text(drinks[i].allergens);
+					allerg.appendTo(item);
+				}
+
+				var price = $('<div/>', {
+					class: 'biergarten-price'
+				});
+				price.text(drinks[i].litre + 'l / ' + drinks[i].price.toFixed(2) + '€');
+				price.appendTo(item);
+				
+				item.appendTo(drinks_container);
+			}
+
+			{
+				$('<hr/>').appendTo(drinks_container);
+
+				var item = $('<div/>', {
+					class: 'biergarten-item'
+				});
+				item.text("Pfand");
+
+				var price = $('<div/>', {
+					class: 'biergarten-price'
+				});
+				price.text('+ ' + PFAND.toFixed(2) + '€');
+				price.appendTo(item);
+				
+				item.appendTo(drinks_container);
+			}
+
+			console.log(food);
+			console.log(drinks);
+		});	
+	}
+	
+	exports.biergarten_load = on_load;
+})(window);
+</script>
