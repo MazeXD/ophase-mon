@@ -89,7 +89,7 @@
 
 		if (active_slide !== -1) {
 			var curr_active = slides[active_slide];
-			curr_active.fadeOut(400, function() {
+			curr_active.fadeOut(0, function() {
 				var id = curr_active.data('id');
 				if (id) {
 					var func = window[id + '_leave'];
@@ -101,7 +101,7 @@
 		}
 
 		var new_active = slides[index];
-		new_active.fadeIn(400, function() {
+		new_active.fadeIn(0, function() {
 			var id = new_active.data('id');
 			if (id) {
 				var func = window[id + '_enter'];
@@ -170,7 +170,7 @@
 					nextSlide();
 					break;
 			}
-		}, 500);
+		}, 250);
 
 		$(document).keydown(throttled_handler);
 		// KeyHandler - End
