@@ -11,7 +11,7 @@ app = Flask(__name__, static_url_path='', static_folder='assets')
 
 TITLE = 'O-Phase 2015'
 ETC = 'Tag 1'
-TWITTER_HASHTAG = '#ophase2015'
+TWITTER_HASHTAG = '#ophase15'
 SLIDE_FOLDER = 'slides/'
 
 
