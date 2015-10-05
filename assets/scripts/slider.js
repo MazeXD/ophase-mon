@@ -159,10 +159,14 @@
 		// KeyHandler - Start
 		var throttled_handler = _.throttle(function(ev) {
 			switch (ev.keyCode) {
-				case 37: // Left arrow
+				case 33: // Left arrow
+				case 37:
+				case 177:
 					previousSlide();
 					break;
-				case 39: // Right arrow
+				case 34: // Right arrow
+				case 39:
+				case 176:
 					nextSlide();
 					break;
 			}
