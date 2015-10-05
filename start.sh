@@ -18,7 +18,8 @@ xset -dpms
 xset s off
 
 ## Start backend server
-./backend.py &
+# TODO: Make it start in here
+#./backend.py &
 
 ## Start the browser (surf). You can restart it by "killall surf"
 while true ; do
