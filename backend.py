@@ -25,7 +25,7 @@ def collect_slides():
 		
 		extension = os.path.splitext(filename)[1]
 		if extension == '.html' or extension == '.htm':
-			with open(SLIDE_FOLDER + filename) as f: 
+			with open(SLIDE_FOLDER + filename, encoding='utf-8') as f:
 				slide['data'] = f.read()
 			slide['type'] = 'html'
 		else:
