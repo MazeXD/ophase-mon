@@ -1,7 +1,7 @@
 (function() {
 	// Constants
 	const CLOCK_ID = "header-clock";
-	const CLOCK_FORMAT = "HH:mm:ss";
+	const CLOCK_FORMAT = "YYYY-MM-DD HH:mm:ss";
 
 	const TITLE_ID = "header-title";
 	const DEFAULT_TITLE = "To be renamed";

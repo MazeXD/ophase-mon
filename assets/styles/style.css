@@ -39,6 +39,8 @@ body, html {
 	display: table-cell;
 	vertical-align: middle;
 
+	font-size: 20pt;
+
 	height: 68px;
 	max-height: 68px;
 	width: 220px;
